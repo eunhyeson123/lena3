@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENA SON </title>
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+        }
+        body{
+           
+            width: 1200px;
+            
+        }
+     
+        .center{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50% ,-50%);
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 20px;
+        
+        }
+
+        .dropdown{
+            position : absolute;
+            display : inline-block;            
+            top: 30%;
+            left: 44%;
+            font-size: 14px;
+            color: rgb(168, 166, 166);
+         }
+         .dropdown :hover{
+            color: pink;
+         }
+
+        .menu{
+            display : none;
+            position : absolute;
+            z-index : 1; 
+         }
+
+        .menu a{
+        display : block;
+        font-size: 13px;
+        color: rgb(168, 166, 166);
+        text-decoration: none;
+        line-height:1.5;
+        padding: 8px;
+        
+        }
+      
+        .menu a:hover{
+            color: pink;
+        }
+
+        .dropdown:hover .menu{
+          display: block;
+          
+        }
+        .contact1{
+            position : absolute;
+            top: 30%;
+            left: 53%;
+            font-size: 14px;
+            color: rgb(168, 166, 166);
+            
+        }
+        .contact1:hover{
+            color: pink;
+        }
+     /* -------------------------------------------------------------- */
+     .container {
+           max-width: 1224px;
+           width: 90%;
+           margin: auto;
+           padding: 40px 0;
+           transform: translate(-50% ,-50%);
+           position: absolute;
+           margin-top: 85%;
+           margin-left: 47%;
+           }
+
+       .title {
+           margin-bottom: 0.5rem;
+         } 
+       .photo{
+          width: 420px;
+         }
+       .photo-gallery {
+          display: flex;
+          gap: 20px;
+         }
+
+      .column {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+        }
+
+      .photo img {
+         width: 100%;
+         border-radius: 5px;
+         height: 100%;
+         object-fit: cover;
+         transition: transform ease-in-out 0.2s;
+          }
+
+        .photo img:hover {
+           transform: scale(1.05);
+          }
+       
+
+          .photo2 img{
+            border-radius: 5px;
+            width: 630px;
+            height: 100%;
+            object-fit: cover;
+            transition: transform ease-in-out 0.2s;
+ 
+          }
+          .photo-gallery2{
+          display: flex;
+          gap: 30px;
+         }
+         .photo2 img:hover {
+           transform: scale(1.05);
+          }
+
+@media(max-width: 768px){
+  .photo-gallery {
+    flex-direction: column;
+  }
+}
+       
+
+    </style>
+
+</head>
+
+<body>
+  
+ <header>
+        <div class="center">LENA SON</div>
+        <div class="dropdown">
+            <span class="dropbtn">Project</span>
+            <div class="menu">
+              <a href="#">Poster</a>
+              <a href="#">Photo</a>
+              <a href="https://summer-breeze3.netlify.app/">Branding</a>
+            </div>
+          </div> 
+         
+         <div class="contact1">Contact</div>
+</header>
+<main>
+    <div class="container">
+        <h3 class="title">Photo</h3>
+        <h5>사진으로 보정 편집 디자인하였습니다.</h5><br>
+        
+        <div class="photo-gallery">
+           <div class="column">
+             <div class="photo">
+                <img src="./images/c-onu.png" alt="cup images" >
+             </div>
+             
+           </div>
+           <div class="column">
+             <div class="photo">
+                <img src="images/c-seattle.png" alt="" style="border: 1px solid rgb(147, 145, 145);">
+             </div> 
+           </div>
+            <div class="column">
+              <div class="photo">
+                <img src="images/c-break.png" alt="">
+             </div>   
+           </div> 
+        </div>
+
+       <br>
+
+      <div class="photo-gallery2">
+        <div class="column">
+          <div class="photo2">
+             <img src="images/window.png" alt="" >
+          </div> 
+          <div class="photo2">
+            <img src="images/victorry.png" alt="">
+         </div>   
+        </div>
+
+         <div class="column">
+           <div class="photo2">
+             <img src="images/vancover.jpg" alt="">
+          </div>
+          <div class="photo2">
+            <img src="images/take.png" alt="">
+         </div>    
+        </div> 
+       
+      </div>
+</main>
+</body>
+</html>
