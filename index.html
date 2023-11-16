@@ -23,6 +23,8 @@
             font-size: 50px;
             font-family: 'Times New Roman', Times, serif;
             letter-spacing: 20px;
+            overflow: hidden;
+            white-space: nowrap;
         
         }
 
@@ -79,13 +81,13 @@
         }
      /* -------------------------------------------------------------- */
      .container {
-           max-width: 1224px;
+           max-width: 1200px;
            width: 90%;
            margin: auto;
            padding: 40px 0;
            transform: translate(-50% ,-50%);
            position: absolute;
-           margin-top: 85%;
+           margin-top: 60%;
            margin-left: 47%;
            }
 
@@ -117,31 +119,36 @@
         .photo img:hover {
            transform: scale(1.05);
           }
-       
 
-          .photo2 img{
-            border-radius: 5px;
-            width: 630px;
-            height: 100%;
-            object-fit: cover;
-            transition: transform ease-in-out 0.2s;
- 
-          }
-          .photo-gallery2{
-          display: flex;
-          gap: 30px;
-         }
-         .photo2 img:hover {
-           transform: scale(1.05);
-          }
+   
 
-@media(max-width: 768px){
-  .photo-gallery {
+          @media(max-width: 768px){
+    body {
+        font-size: 16px;
+        max-width: 100%; 
+    }
+    .center {
+        font-size: 30px;
+        letter-spacing: 10px;
+        
+    }
+    .dropdown {
+        top: 30%;
+        left: 35%;
+        font-size: 12px;
+    }
+    .contact1 {
+        top: 30%;
+        left: 53%;
+        font-size: 12px;
+    }
+    .photo-gallery {
     flex-direction: column;
-  }
-}
-       
+    position: absolute;
 
+  }
+
+          }
     </style>
 
 </head>
@@ -173,42 +180,30 @@
              <div class="photo">
                 <img src="./images/c-onu.png" alt="cup images" >
              </div>
+             <div class="photo">
+                <img src="images/window.png" alt="window image" >
+             </div>   
              
            </div>
            <div class="column">
              <div class="photo">
-                <img src="images/c-seattle.png" alt="" style="border: 1px solid rgb(147, 145, 145);">
+                <img src="images/c-seattle.png" alt="seattle image" style="border: 1px solid rgb(147, 145, 145);">
              </div> 
+             <div class="photo">
+                <img src="images/victorry.png" alt="canada image">
+             </div>   
            </div>
             <div class="column">
               <div class="photo">
-                <img src="images/c-break.png" alt="">
+                <img src="images/c-break.png" alt="canada image">
              </div>   
+             <div class="photo">
+                <img src="images/take.png" alt="wave image">
+             </div>  
            </div> 
+           
         </div>
 
-       <br>
-
-      <div class="photo-gallery2">
-        <div class="column">
-          <div class="photo2">
-             <img src="images/window.png" alt="" >
-          </div> 
-          <div class="photo2">
-            <img src="images/victorry.png" alt="">
-         </div>   
-        </div>
-
-         <div class="column">
-           <div class="photo2">
-             <img src="images/vancover.jpg" alt="">
-          </div>
-          <div class="photo2">
-            <img src="images/take.png" alt="">
-         </div>    
-        </div> 
-       
-      </div>
 </main>
 </body>
 </html>
